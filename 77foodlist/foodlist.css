@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('font/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('font/ubuntu-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "ubuntu";
+}
+
+body{
+	background-color: #1b3053;
+}
+aside{
+	width: 25vw;
+	height: 100vh;
+	color: white;
+	float: left;
+	
+	padding: 40px;
+}
+aside h2{
+	margin-top: 8vh;
+	font-size: 3rem;
+	width: 100px;
+}
+aside h2+p{
+	margin-top: 60px;
+}
+aside p{
+	font-size: 1.5rem;
+	line-height: 40px;
+}
+aside button{
+	margin-top: 20px;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	background-color: red;
+	color: white;
+	font-size: 1rem;
+	border-style: none;
+	border-radius: 5px;
+}
+main{
+	width: 73vw;
+	height: 80vh;
+	background-color: white;
+	float: left;
+	margin-top: 10vh;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-template-rows: 1fr 1fr 2fr 3fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	padding-right: 10px;
+}
+main img{
+	grid-column: 1/2;
+	grid-row: 1/5;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-style: none;
+	border-radius: 10px 0 0 10px;
+}
+main h2{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	height: 100px;
+	line-height: 100px;
+	font-size: 2.5rem;
+	overflow: hidden;
+	margin-left: 20px;
+}
+main h2+ul{
+	grid-column: 2/3;
+	grid-row: 2/3;
+	overflow: auto;
+	padding-left: 20px;
+}
+main h2+ul li{
+	margin-bottom: 10px;
+	list-style: none;	
+}
+main section{
+	grid-column: 2/3;
+	grid-row: 3/4;
+	overflow: auto;
+	padding-left: 20px;
+}
+main section ul{
+	list-style-type: circle;
+}
+main section ul li{
+	margin-bottom: 5px;
+	list-style-type: circle;
+}
+main h3{
+	font-size: 1.8rem;
+	margin-bottom: 10px;
+	height: 45px;
+	line-height: 45px;
+}
+main article{
+	grid-column: 2/3;
+	grid-row: 4/5;
+	overflow: auto;
+	margin-left: 20px;
+}
+main article p{
+	line-height: 20px;
+	word-wrap: break-word;
+	font-size: .91rem;
+}
