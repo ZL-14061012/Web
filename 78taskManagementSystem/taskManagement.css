@@ -1,0 +1,239 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+}
+nav{
+	background-color: #12264f;
+	height: 10vh;
+	width: 100vw;
+	line-height: 10vh;
+	color: white;
+	padding-left: 30px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+main{
+	display: flex;
+	height: 90vh;
+	width: 100vw;
+	cursor: default;
+}
+#classify{
+	/*border-right: 1px solid lightgray;*/
+	background-color: rgba(135, 206, 235, 0.1);
+	flex: 1 1 100px;
+	display: flex;
+	flex-direction: column;
+}
+#classify-all{
+	height: 40px;
+	line-height: 40px;
+	margin-left: 10px;
+	flex: 0 0 40px;
+}
+#classify-list{
+	width: 100%;
+	margin-bottom: auto;
+	height: 40px;
+	line-height: 40px;
+	flex: 1 1 40px;
+	overflow: auto;
+}
+#classify-list>p{
+	margin-left: 10px;
+}
+.classify-list-show{
+	background-color: white;
+}
+#classify-list ul{
+	width: 100%;
+}
+#classify-list ul li{
+	font-size: .9rem;
+	width: 100%;
+	display: flex;
+}
+#classify-list ul li p{
+	margin-left: 5px;
+	margin-right: auto;
+}
+#classify-list ul li i{
+	font-size: 1rem;
+}
+#classify-list ul li i:first-child{
+	margin-left: 20px;
+}
+#classify-list ul li p+i{
+	display: none;
+}
+#classify-list ul li:hover p+i{
+	display: inline-block;
+	margin-right: 10px;
+}
+#classify-list>ul>li:first-child:hover p+i{
+	display: none;
+}
+#task{
+	flex: 1 1 100px;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #d4e5ef;
+}
+#task-head{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex: 0 0 40px;
+}
+.task-head-show{
+	background-color: #106898;
+	color: white;
+	/*width: 60px;*/
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+}
+#task-content{
+	margin-bottom: auto;
+	flex: 1 1 40px;
+	overflow: auto;
+}
+#task-content .complete{
+	color: green;
+}
+#task-content .current-task-show{
+	background-color: rgba(135, 206, 235, 0.1);
+}
+#task-content>ul>li{
+	padding-left: 20px;
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	background-color: #d4e5ef;
+	color: #12264f;
+}
+#task-content>ul>ul li{
+	padding-left: 30px;
+	height: 40px;
+	line-height: 40px;
+	list-style: none;
+	color: #12264f;
+}
+.foot{
+	flex: 0 0 50px;
+	width: 100%;
+	height: 50px;
+	background-color: #106898;
+	line-height: 50px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+.foot span:first-child{
+	font-size: 2rem;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 20px;
+}
+.foot span:last-child{
+	font-size: .8rem;
+	display: block;
+	height: 50px;
+	line-height: 56px;
+}
+article{
+	flex: 7 1 100px;
+}
+#article-topic{
+	height: 60px;
+	padding-left: 20px;
+	padding-right: 30px;
+	border-bottom: 1px solid #d4e5ef;
+	display: flex;
+}
+#article-topic h3{
+	line-height: 60px;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-right: auto;
+}
+#article-topic i{
+	line-height: 60px;
+	margin-left: 30px;
+	font-size: 1.5rem;
+}
+#article-date{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #d4e5ef;
+	padding-left: 20px;
+}
+#article-content{
+	padding: 20px;
+	line-height: 30px;
+}
+
+
+.show-task-window{
+	width: 40vw;
+	height: 50vh;
+	background-color: white;
+	border-top: 50px solid #114870;
+	border-bottom: 50px solid #114870;
+	position: absolute;
+	left: 30vw;
+	top: 22vh;
+	overflow: auto;
+	display: none;
+}
+.show-task-window p{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 20px;
+}
+.show-task-window input{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid gray;
+	font-size: 1rem;
+	padding-left: 20px;
+}
+.show-task-window textarea{
+	width: 300px;
+	height: 100px;
+	margin: 2px;
+	border: 1px solid gray;
+	font-size: 1rem;
+	padding: 20px;
+}
+.show-task-window p:last-child{
+	justify-content: space-evenly;
+}
+.show-task-window .submit-button{
+	width: 100px;
+	height: 40px;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	padding-left: 0px;
+	border-style: none;
+	border-radius: 10px;
+}
+.scon{
+	background-color: green;
+}
+.scan{
+	background-color: red;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="taskManagement.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<title>TaskManagement</title>
+</head>
+<body>
+	<nav>GTD Tools</nav>
+	<main>
+		<aside id="classify">
+			<div id="classify-all">所有任务</div>
+			<div id="classify-list">
+				<p>分类列表</p>
+				<ul>
+					<li>
+						<i class="bi bi-folder2-open"></i>
+						<p>默认分类</p>
+						<i class="bi bi-x-lg"></i>
+					</li>
+				</ul>
+			</div>
+			<div id="classify-foot" class="foot">
+				<span>+</span>
+				<span>新增分类</span>
+			</div>
+		</aside>
+		<aside id="task">
+			<div id="task-head">
+				<span>所有</span>
+				<span>已完成</span>
+				<span>未完成</span>
+			</div>
+			<div id="task-content"></div>
+			<div id="task-foot" class="foot">
+				<span>+</span>
+				<span>新增任务</span>
+			</div>
+		</aside>
+		<article>
+			<div id="article-topic"></div>
+			<h4 id="article-date"></h4>
+			<p id="article-content"></p>
+		</article>
+		<form id="add-task" class="show-task-window">
+			<p>
+				<label for="add-task-topic">标题：</label>
+				<input type="text" id="add-task-topic" name="add-task-topic">
+			</p>
+			<p>
+				<label for="add-task-date">时间：</label>
+				<input type="text" id="add-task-date" name="add-task-date">
+			</p>
+			<p>
+				<label for="add-task-content">内容：</label>
+				<textarea name="add-task-content" id="add-task-content" cols="30" rows="5"></textarea>
+			</p>
+			<p>
+				<input type="submit" id="submit-confirm" class="submit-button scon" value="确认">	
+				<input type="submit" id="submit-cancel" class="submit-button scan" value="取消">
+			</p>
+			
+		</form>
+	</main>
+	<script src="taskManagement.js"></script>
+</body>
+</html>
