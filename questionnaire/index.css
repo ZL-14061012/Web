@@ -1,0 +1,355 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f5f5f5;
+}
+button{
+	height: 20px;
+	width: 50px;
+	background-color: #f5f5f5;
+	border-style: none;
+	border: 1px solid #dcdcdc;
+}
+button:hover{
+	background-color: orange;
+	color: white;
+}
+.questionnaire nav{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: orange;
+	color: white;
+}
+.questionnaire nav span:first-child{
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-left: 80px;
+}
+.questionnaire nav span:first-child i{
+	margin-right: 10px;
+	font-size: 1.4rem;
+}
+.questionnaire nav span+span{
+	font-size: .8rem;
+	margin-left: 80px;
+}
+.show-list{
+	background-color: white;
+	height: 400px;
+	width: 800px;
+	margin: 20px auto;
+}
+.show-list>div:first-child{
+	display: grid;
+	background-color: #f5f5f5;
+	grid-template-columns: 3fr 2fr 2fr 1fr 1fr;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 60px;
+	padding-right: 40px;
+}
+
+.show-list>div:first-child button{
+	background-color: orange;
+	width: 80px;
+	color: white;
+	margin-top: 10px;
+}
+.show-list .show-list-foot{
+	font-size: .9rem;
+	height: 50px;
+	line-height: 50px;
+}
+.show-list .show-list-foot input{
+	margin-left: 30px;
+	margin-right: 10px;
+}
+.show-list .show-list-foot button{
+	margin-left: 20px;
+}
+.show-list li{
+	display: grid;
+	height: 50px;
+	align-items: center;
+	border-bottom: 1px solid #f5f5f5;
+	grid-template-columns: 3.9fr 2.4fr 2fr 1fr 1fr 1fr;
+	padding: 0 10px 0 10px;
+	font-size: .9rem;
+}
+.show-list li:hover{
+	background-color: #FFE4B5;
+}
+.show-list li input{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+/*.show-list li button{
+	background-color: #f5f5f5;
+}*/
+
+/*编辑调查问卷界面*/
+.questionnaire-edit{
+	width: 60vw;
+	height: 700px;
+	position: absolute;
+	left: 20vw;
+	top: 70px;
+	background-color: white;
+	padding: 20px;
+	overflow: auto;
+	display: none;
+}
+.questionnaire-edit h2{
+	width: 100%;
+	height: 80px;
+	/*line-height: 80px;*/
+	border-bottom: 1px solid #d3d3d3;
+	/*text-align: center;*/
+}
+.questionnaire-edit h2 input{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border-style: none;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.questionnaire-edit>ul{
+	width: 100%;
+	padding: 20px;
+}
+.questionnaire-edit>ul li:hover{
+	background-color: #FFE4B5;
+}
+.questionnaire-edit>ul li:hover input{
+	background-color: #FFE4B5;
+}
+.questionnaire-edit .question-list{
+	list-style: none;
+	padding: 20px 20px 10px 40px;
+}
+.questionnaire-edit .question-list p{
+	display: flex;
+	margin-bottom: 10px;
+	padding-right: 10px;
+}
+.questionnaire-edit .question-list p>input{
+	font-size: 1rem;
+	border-style: none;
+	width: 80%;
+	height: 30px;
+	line-height: 30px;
+}
+.questionnaire-edit .question-list p label{
+	margin-left: auto;
+	font-size: .7rem;
+}
+.questionnaire-edit .question-list div{
+	display: flex;
+	visibility: hidden;
+}
+.questionnaire-edit .question-list:hover div{
+	visibility: inherit;
+}
+.questionnaire-edit .question-list div button{
+	border-style: none;
+	background-color: transparent;
+}
+.questionnaire-edit .question-list div button:first-child{
+	margin-left: auto;
+}
+.questionnaire-edit .question-list label{
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.questionnaire-edit .question-list form label{
+	display: flex;
+	align-items: center;
+	height: 30px;
+}
+.questionnaire-edit .question-list form label input+input{
+	border-style: none;
+	font-size: .8rem;
+	margin-left: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.questionnaire-edit .question-list textarea{
+	width: 400px;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	padding: 10px;
+}
+.questionnaire-edit .question-add{
+	margin: 20px;
+	border: 1px solid gray;
+}
+.questionnaire-edit .question-add p{
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.questionnaire-edit .question-add p button{
+	text-align: center;
+	margin: 0 20px 0 20px;
+	height: 25px;
+	line-height: 25px;
+	width: 60px;
+}
+.questionnaire-edit .question-add div{
+	height: 70px;
+	width: 100%;
+	background-color: #f5f5f5;
+	text-align: center;
+	line-height: 70px;
+}
+.questionnaire-edit .question-foot{
+	width: 100%;
+	height: 90px;
+	border-top: 1px solid #d3d3d3;
+	display: flex;
+	align-items: center;
+}
+.questionnaire-edit .question-foot>span:first-child{
+	margin-left: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: .8rem;
+}
+.questionnaire-edit .question-foot input{
+	height: 28px;
+	width: 180px;
+	background-color: white;
+	text-align: center;
+	border-style: none;
+	border: 1px solid #d3d3d3;
+	margin-left: 20px;
+	padding-left: 10px;
+	position: relative;
+}
+.questionnaire-edit .question-foot button{
+	width: 60px;
+
+}
+.questionnaire-edit .question-foot button:nth-child(3){
+	margin: 0 20px 0 250px;
+}
+
+/*提示窗口*/
+.prompt-back{
+	height: 100vh;
+	width: 100vw;
+	background-color: gray;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.prompt-back .prompt-window{
+	width: 20vw;
+	height: 140px;
+	position: absolute;
+	left: 40vw;
+	top: 200px;
+	background-color: white;
+}
+.prompt-window .first-p{
+	height: 30px;
+	display: flex;
+	align-items: center;
+	padding: 0 20px 0 20px;
+	background-color: #f5f5f5;
+}
+.prompt-window .first-p i{
+	margin-left: auto;
+}
+.prompt-window .second-p{
+	height: 60px;
+	padding: 20px;
+	font-size: .8rem;
+	color: gray;
+}
+.prompt-window .last-p{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.prompt-window .last-p button{
+	margin: 0 10px 0 10px;
+}
+.prompt-window .last-p button:hover{
+	color: white;
+	background-color: orange;
+}
+/*日历组件*/
+.calendar{
+	width: 180px;
+	height: 200px;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 10px;
+	display: none;
+}
+.calendar .calendar-head{
+	height: 30px;
+	background-color: orange;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: .8rem;
+	padding: 10px;
+}
+.calendar .calendar-head i{
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.calendar .calendar-head span span{
+	margin: 0 5px 0 5px;
+}
+.calendar table{
+	border-collapse: collapse;
+	width: 180px;
+	height: 160px;
+}
+.calendar table thead tr{
+	height: 30px;
+	background-color: orange;
+	color: white;
+	font-size: .6rem;
+	font-weight: normal;
+}
+.calendar table thead th{
+	width: 26px;
+}
+.calendar tr,
+.calendar table,
+.calendar td{
+	border: 1px solid lightgray;
+	text-align: center;
+	font-size: .7rem;
+	color: lightgray;
+}
+.questionnaire-edit .question-foot .calendar .calendar-button{
+	width: 24px;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
